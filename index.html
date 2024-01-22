@@ -7,72 +7,124 @@
     <title>My Web Page</title>
 </head>
 <body>
+    <div class="scroll-to-bottom" onclick="scrollToBottom()">Scroll to Bottom</div>
     <div id="timerContainer">
         <div id="timer"><button id="startButton" onclick="startTimer()">Start Timer</button></div>    
         <div id="message">ありがとうございました</div>
-    
     </div>
 
     <header>
         <h1>自己紹介 & やってみたかったこと</h1>
     </header>
-
-    <div class="login-container">
+    <div class="wrapper">
+        <video autoplay loop muted class="wrapper__video">
+           <source src="pexels_videos.mp4">
+        </video>
+    </div>
+    <br><br><br>
+    <div class="text1">
+    <h1>田中　幸佑</h1>
+    <h2>（たなか　こうすけ）</h2>
+    <br>
+    <h1>工場DX支援</h1>
+    <h2>（半年前までボデー塗装工程技術員でした）</h2>
+    <br>
+    <h1>愛知県瀬戸市</h1>
+    <br>
+    <h2>趣味など紹介しつつ　やってみたかったこと</h2>
+    <h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h1>
+    <div class="text1">
+        <h2>すでにやりましたが</h4>
+        <br><br><br>
+        <h2>①パスワードログイン</h2>
+        <br><br>
+        </div>
+    <div id="login-container">
         <h2>Login</h2>
-        <form id="loginForm">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="button1" onclick="validatePassword()">Login</button>
-        </form>
-        <p id="error-message"></p>
-    </div> <br><br><br><br><br>
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        
+        <button onclick="login()">Login</button>
+      </div>
+      
 
-    
-    <h1>名前：田中　幸佑（たなか　こうすけ）</h1>
-    <h1>仕事：工場DX支援</h1>
-    <h1>住まい：愛知県瀬戸市</h1>
-    <h2>趣味など
-      <ul>
-        <li>子供とバスケ</li>
-        <li>筋トレ（健康維持）</li>
-        <li>家庭菜園</li>
-      </ul>
-    </h2><br><br><br><br><br>
-    <h2>①Youtubeの埋め込み</h2>
-    <h4>　🏀ちょっと前ですが感動したシーン🏀</h4>
-    <main>
+
+
+
+    <h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h1>
+    <h2>子供とバスケ</h2>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>②Youtubeの埋め込み】</h2>
+    <h4>🏀ちょっと前ですが感動したシーン🏀4:15ぐらいからがお薦めです</h4>
+    </div>
+
+    <main style="text-align: center;">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/0DE0n59lPZQ?si=aS-SgbdyKx-MhdYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </main><br><br><br><br><br><br>
-
+    </main>
+    <h1><br><br><br><br><br><br><br><br><br><br><br><br></h1>
     
-    <main>
-        <h4>　もうひとつ</h4><br><br><br><br><br><br>
+    <main style="text-align: center;">
+        <h3>もうひとつ　趣味ではないですが・・・</h3>
+        <h1><br><br><br><br><br><br><br><br><br><br><br><br></h1>
+        <h3>RedBull Dance Your Style</h3>
         <img src="soraki.png" width = "570">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/HKKEJOQQ0hA?si=1TePOrjfTsAubD5K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </main><br><br>
-    <h4>　 久しぶりに心が震えました</h4>
-    <h4>　 人種とか　言葉とか　そういうものを超越していて</h4>
-    <h4>　 社会で　荒んだ心が　少しだけ　きれいになりました</h4>
-    <h4>　 みなさん　感動してますか　（どの立場？）</h4>
+    </main>
+    <br>
+    <div class="text1">
+    <h4>久しぶりに心が震えました</h4>
+    <h4>人種とか　言葉とか　そういうものを超越していて</h4>
+    <h4>講義や演習で打ちのめされた心を　奮い立たせてくれました</h4>
+    <h4>みなさん　感動してますか　（どの立場？）</h4><br>
+    <h4>でも　演習問題解けると　感動しました</h4>
+    <h1><br><br><br><br><br><br><br><br><br><br><br><br></h1>
 
-    <br><br><br>
-
-    <h2>　話を戻して</h4><br><br><br>
-    <main>
-        <h2>②Google Mapの埋め込み</h2>
-        <h4>　</h4>
+    <h2>話を戻して</h2>
+    <h1><br><br><br><br><br><br><br><br><br><br><br><br></h1>
+    </div>
+    <main style="text-align: center;">
+        <h2>③Google Mapの埋め込み</h2>
+        <br>
         <section id="googleMap">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104274.16695455261!2d137.0100187391197!3d35.24212958674348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600369126310a0a3%3A0xf2c344fbf649ef7e!2z5Li45LqA6KO96bq654Cs5oi4!5e0!3m2!1sja!2sjp!4v1705843718259!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <h4>　どうでもいいですが　かけうどん　と　ごぼう天　が好きです</h4>
+        <h1><br><br><br><br><br><br><br><br><br><br><br><br></h1>
+        <h3>どうでもいいですが　かけうどん　と　ごぼう天　が好きです</h3>
+        <br><br>
+        <div class="square-green" >
+            <input type="number" id="gatorCount" placeholder="うどんの数を入力">
+            <button class="button" onclick="gators()">うどん放出！</button>
+        </div>
+        <div class="square-blue" id="gatorBox"></div>
+        <script src="main.js"></script>
     </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="text1">
+    <h2>最後に</h2><br><br>
+    <h4>学びの機会を与えてくださった　すべての皆様に　大変感謝しております</h4><br><br>
+    <h4>本当にありがとうございます</h4><br><br>
+    <h4>0　が　0.1　になったぐらいの成長かもしれませんが</h4><br><br>
+    <h4>今後も　学び続けていきたいと思います</h4><br><br>
+    <br><br><br><br><br><br></div>
+
 
     <footer>
-        <!-- フッターのコンテンツをここに追加 -->
+        <img src="CARGO-BASE-ロゴ（シンプル）_背景白追加-1.png" width = "100" hspace="200">
+        <img src="kaisya.png" width = "200" hspace="300">
+        <img src="LCBASE.png" width = "100" hspace="200">
     </footer>
+
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=googleMap">
     </script>
+
     <script src="main.js"></script>
 </body>
 </html>
