@@ -1,6 +1,6 @@
 header, footer {
     background: black;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     color: white;
 }
@@ -21,13 +21,21 @@ main {
     position: absolute;
     width: 50%;
     height: 50%;
+    top: 0;
+	right: 0;
+	botom: 0;
+	left: 0;
+	margin: auto 0;
 }
 
 
 /* Google Map */
 #googleMap {
-    width: 80%;
+    width: 100%;
     height: 80%; /* 地図の高さ */
+    margin: auto 0;
+    text-align: center;
+    align-items: center;
 }
 
 /* Timer */
@@ -44,35 +52,41 @@ main {
 }
 
 #timer {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 #message {
     display: none;
     font-size: 10px;
     margin-top: 15px;
+    border-radius:30px;
 }
 
 #startButton {
     margin-top: 5px;
     padding: 1px 10px;
-    font-size: 10px;
+    font-size: 20px;
     background-color: black;
+    border-radius:30px;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-/* body {
-    margin: 0;
+.body {
+    background-image: url("production.mp4");
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    /* margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
-} */
+    background-color: #f0f0f0; */
+}
 
 /* Login */
 .login-container {
@@ -109,3 +123,86 @@ input {
     margin-top: 10px;
 }
 
+
+.pr-container{
+    text-align: center;
+  }
+
+
+.square-green {
+    width: 270px;
+    height: 200px;
+    background-image: url("udon.jpg");
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input2 {
+    margin-bottom: 10px;
+}
+
+.botton {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    padding: 8px 16px;
+    font-size: 0px;
+    background-color: #fff; /*ボタンの背景色 */
+    border: 2px solid #333; /* ボーダーの色 */
+    color: #333; /* テキストの色 */
+    cursor: pointer;
+}
+
+.square-blue {
+    width: 270px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+.scroll-to-bottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset */
+*{
+    margin: 0;
+    paddding: 0;
+  }
+  
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+.wrapper .wrapper__video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(movie.jpg) no-repeat;
+    background-size: cover;
+   }
+
+.text1{
+    text-align:  center;
+}
