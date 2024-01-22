@@ -6,7 +6,7 @@
 // 発表カウントダウン
 
 let countdown;
-let time = 30; // タイマーの設定値
+let time = 270; // タイマーの設定値
 
 function startTimer() {
     document.getElementById('startButton').disabled = true;
@@ -53,14 +53,12 @@ function googleMap() {
         center: {lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE}, // 地図の中心部の座標
         zoom: 15
     });
-
-    
 }
 
 
-// ログイン画面
+ログイン画面
 
-const correctPassword = "password123"; // 実際のパスワードはここで設定
+const correctPassword = "password"; // 実際のパスワード設定
 
 function validatePassword() {
     const passwordInput = document.getElementById("password").value;
@@ -79,3 +77,59 @@ function validatePassword() {
 
 
 
+// うどんの表示を行う関数
+function gators() {
+    const gatorCountInput = document.getElementById("gatorCount");
+    const gatorContainer = document.getElementById("gatorBox");
+  
+     gatorContainer.innerHTML = '';
+  
+    const gatorCount = parseInt(gatorCountInput.value);
+
+    if (!isNaN(gatorCount) && gatorCount > 0) {
+    
+      for (let i = 0; i < gatorCount; i++) {
+  
+        const gator = document.createElement("span");
+ 
+        gator.textContent = '🍜';
+
+        gatorContainer.appendChild(gator);
+      }
+    }
+  }
+
+function scrollToBottom() {
+    const windowHeight = window.innerHeight;
+    const bodyHeight = document.body.scrollHeight;
+
+    window.scrollTo({
+        top: bodyHeight - windowHeight,
+        behavior: 'smooth'
+    });
+}
+
+
+function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+  
+    // ユーザー名とパスワード
+    var validUsername = "user";
+    var validPassword = "password";
+  
+    if (username === validUsername && password === validPassword) {
+      // ログイン成功
+      alert("ログイン成功！");
+      // 遷移するページのURL
+      window.location.href = "index.html";
+    } else {
+      // ログイン失敗
+      alert("ユーザー名またはパスワードが正しくありません。");
+    }
+  }
+
+document.getElementById('redirectButton').addEventListener('click', function() {
+    // ここで遷移したいページのURLを指定します
+    window.location.href = "login.html";
+  });
